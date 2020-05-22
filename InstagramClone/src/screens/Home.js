@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView, View } from "react-native";
 import { Header, Navigation, Post, Space, Story } from '../components';
 
-export default function Home() {
+export default function Home({ navigation }) {
     return (
         <View style={{ flex: 1 }}>
             <Space />
@@ -28,7 +28,7 @@ export default function Home() {
                     </ScrollView>
                 </View>
             </View>
-            <Navigation />
+            <Navigation navigation={navigation} />
         </View >
     );
 }

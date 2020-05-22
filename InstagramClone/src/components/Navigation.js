@@ -2,21 +2,21 @@ import React from 'react'
 import { View, Image } from "react-native";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-export default function Navigation({ navigation }) {
+export default function Navigation(props) {
     function onHome() {
-        navigation.navigate('Home')
+        props.navigation.navigate('Home')
     }
     function onSearch() {
-        navigation.navigate('Search')
+        props.navigation.navigate('Search')
     }
     function onAdd() {
-        navigation.navigate('Add')
+        props.navigation.navigate('Add')
     }
     function onLike() {
-        navigation.navigate('Like')
+        props.navigation.navigate('Like')
     }
     function onProfile() {
-        navigation.navigate('Profile')
+        props.navigation.navigate('Profile')
     }
 
     return (
@@ -29,7 +29,7 @@ export default function Navigation({ navigation }) {
                 </TouchableOpacity>
             </View>
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+                <TouchableOpacity onPress={onSearch}>
                     <View>
                         <Image source={require('../../assets/images/search.png')} style={{ width: 38, height: 38 }} />
                     </View>
