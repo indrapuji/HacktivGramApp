@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-// import * as Font from "expo-font"
 import { StyleSheet, View, ScrollView } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Home, Add, Search, Profile, Like } from './src/screens'
+// import * as Font from "expo-font"
 // import { AppLoading } from 'expo'
-import Navigation from './src/components/Navigation'
-import Space from './src/components/Space'
-import Header from './src/components/Header'
-import Story from './src/components/Story'
-import Post from './src/components/Post'
 
 // const getFonts = () => {
 // 	return Font.loadAsync({
@@ -14,37 +12,22 @@ import Post from './src/components/Post'
 // 	})
 // }
 
+const Stack = createStackNavigator();
+
 export default function App() {
 	const [fontsLoaded, setFontsLoaded] = useState(false)
 
 	// if (fontsLoaded) {
 	return (
-		<View style={{ flex: 1 }}>
-			<Space />
-			<Header />
-			<View style={{ flex: 1 }}>
-				<View>
-					<ScrollView showsVerticalScrollIndicator={false}>
-						<ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ height: 97, flexDirection: 'row', paddingLeft: 12, paddingTop: 7, borderWidth: 0.5, borderColor: "#DADADA" }}>
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-							<Story />
-						</ScrollView>
-						<Post />
-						<Post />
-						<Post />
-					</ScrollView>
-				</View>
-			</View>
-			<Navigation />
-		</View >
+		<NavigationContainer>
+			<Stack.Navigator>
+				<Stack.Screen options={{ headerShown: false }} name="Home" component={Home} />
+				<Stack.Screen options={{ headerShown: false }} name="Add" component={Add} />
+				<Stack.Screen options={{ headerShown: false }} name="Search" component={Search} />
+				<Stack.Screen options={{ headerShown: false }} name="Profile" component={Profile} />
+				<Stack.Screen options={{ headerShown: false }} name="Like" component={Like} />
+			</Stack.Navigator>
+		</NavigationContainer>
 	);
 	// } else {
 	// 	return (
