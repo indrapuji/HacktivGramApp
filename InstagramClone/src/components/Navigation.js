@@ -52,7 +52,7 @@ export default function Navigation(props) {
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <TouchableOpacity onPress={onProfile}>
                     <View>
-                        <Image source={require('../../assets/images/thumbnail-pp.png')} style={{ width: 38, height: 38 }} />
+                        <Image source={require('../../assets/images/image.png')} style={{ width: 30, height: 30, borderRadius: 50 }} />
                     </View>
                 </TouchableOpacity>
             </View>
