@@ -7,7 +7,7 @@ export default function Navigation(props) {
         props.navigation.navigate('Home')
     }
     function onSearch() {
-        props.navigation.navigate('Search')
+        props.navigation.navigate('Register')
     }
     function onAdd() {
         props.navigation.navigate('Add')
