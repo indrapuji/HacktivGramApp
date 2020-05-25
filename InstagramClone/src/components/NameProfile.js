@@ -11,7 +11,7 @@ export default function DetailProfile() {
                     </View>
                 </View>
                 <View>
-                    <Image source={require('../../assets/images/3line.png')} style={{ width: 38, height: 38, top: 3, right: 4 }} />
+                    <Image source={require('../../assets/images/3dots.png')} style={{ width: 38, height: 38, top: 3, right: 4 }} />
                 </View>
             </View>
         </View>
