@@ -1,23 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Home, Add, Search, Profile, Like, Login, Register } from './src/screens'
-// import * as Font from "expo-font"
-// import { AppLoading } from 'expo'
 
-// const getFonts = () => {
-// 	return Font.loadAsync({
-// 		'Apple-Symbols': require('./assets/fonts/Apple-Symbols.ttf')
-// 	})
-// }
 
 const Stack = createStackNavigator();
 
 export default function App() {
-	const [fontsLoaded, setFontsLoaded] = useState(false)
 
-	// if (fontsLoaded) {
 	return (
 		<NavigationContainer>
 			<Stack.Navigator>
@@ -31,11 +22,7 @@ export default function App() {
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
-	// } else {
-	// 	return (
-	// 		<AppLoading startAsync={getFonts} onFinish={() => setFontsLoaded(true)} />
-	// 	)
-	// }
+
 }
 
 const styles = StyleSheet.create({});

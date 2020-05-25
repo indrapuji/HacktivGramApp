@@ -10,7 +10,20 @@ export default function Home({ navigation }) {
             <View style={{ flex: 1 }}>
                 <View>
                     <ScrollView showsVerticalScrollIndicator={false}>
-                        <Story />
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ height: 97, flexDirection: 'row', paddingLeft: 12, paddingTop: 7, borderWidth: 0.5, borderColor: "#DADADA" }}>
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                            <Story />
+                        </ScrollView>
+                        <Post />
+                        <Post />
                         <Post />
                     </ScrollView>
                 </View>
