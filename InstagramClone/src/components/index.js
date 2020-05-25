@@ -1,6 +1,7 @@
 export { default as Space } from './Space'
 export { default as Header } from './Header'
 export { default as Story } from './Story'
+export { default as StoryAdd } from './StoryAdd'
 export { default as Post } from './Post'
 export { default as Navigation } from './Navigation'
 export { default as NameProfile } from './NameProfile'

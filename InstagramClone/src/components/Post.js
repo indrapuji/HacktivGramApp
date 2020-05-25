@@ -8,7 +8,7 @@ export default function Post() {
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: "space-between" }}>
                 <View style={{ height: 53, flexDirection: 'row' }}>
                     <View style={{ justifyContent: "center" }}>
-                        <Image source={require('../../assets/images/thumbnail-post.png')} style={{ width: 38, height: 38, left: 9 }} />
+                        <Image source={require('../../assets/images/image.png')} style={{ width: 38, height: 38, left: 9, borderRadius: 50 }} />
                     </View>
                     <View style={{ justifyContent: "center" }}>
                         <Text style={{ marginLeft: 17, fontSize: 13, fontWeight: 'bold' }}>animationv</Text>

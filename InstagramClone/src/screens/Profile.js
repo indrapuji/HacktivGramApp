@@ -29,10 +29,10 @@ export default function Profile({ navigation }) {
 
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: "space-around", marginBottom: 15 }}>
                             <View>
-                                <Image source={require('../../assets/images/like.png')} style={{ width: 30, height: 30 }} />
+                                <Image source={require('../../assets/images/block.png')} style={{ width: 30, height: 30 }} />
                             </View>
                             <View>
-                                <Image source={require('../../assets/images/like.png')} style={{ width: 30, height: 30 }} />
+                                <Image source={require('../../assets/images/tags.png')} style={{ width: 30, height: 30 }} />
                             </View>
                         </View>
 
