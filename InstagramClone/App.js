@@ -17,8 +17,6 @@ export default function App() {
 				<Stack.Screen options={{ headerShown: false }} name="Search" component={Search} />
 				<Stack.Screen options={{ headerShown: false }} name="Profile" component={Profile} />
 				<Stack.Screen options={{ headerShown: false }} name="Like" component={Like} />
-				<Stack.Screen options={{ headerShown: false }} name="Login" component={Login} />
-				<Stack.Screen options={{ headerShown: false }} name="Register" component={Register} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
