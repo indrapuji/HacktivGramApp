@@ -2,6 +2,9 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 
 export default function ImageProfile() {
+
+    
+
     return (
         <View style={{ flex: 1, height: 114, flexDirection: 'row', justifyContent: "space-evenly" }}>
             <View>

@@ -2,26 +2,28 @@ import React from 'react'
 import { View, Image, Text } from 'react-native'
 
 
-export default function Post() {
+export default function Post(props) {
+
     return (
         <View style={{ height: 566, borderWidth: 0.5, borderColor: "#DADADA" }}>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: "space-between" }}>
+                {/* <Text>props: {JSON.stringify(props.posting)}</Text> */}
                 <View style={{ height: 53, flexDirection: 'row' }}>
                     <View style={{ justifyContent: "center" }}>
-                        <Image source={require('../../assets/images/image.png')} style={{ width: 38, height: 38, left: 9, borderRadius: 50 }} />
+                        <Image source={{uri:props.posting.image_url}} style={{ width: 38, height: 38, left: 9, borderRadius: 50 }} />
                     </View>
                     <View style={{ justifyContent: "center" }}>
-                        <Text style={{ marginLeft: 17, fontSize: 13, fontWeight: 'bold' }}>animationv</Text>
-                        <Text style={{ top: -5, marginLeft: 17, fontSize: 13 }}>Location</Text>
+                        <Text style={{ marginLeft: 17, fontSize: 13, fontWeight: 'bold' }}>{props.posting.title}</Text>
+                        <Text style={{ top: -5, marginLeft: 17, fontSize: 13 }}>{props.posting.location}</Text>
                     </View>
                 </View>
                 <View>
-                    <Image source={require('../../assets/images/3dots.png')} style={{ width: 38, height: 38, top: 4, right: 5 }} />
+                    <Image source={{uri:props.posting.image_url}} style={{ width: 38, height: 38, top: 4, right: 5 }} />
                 </View>
             </View>
             <View>
                 <View style={{ width: 360, height: 360 }}>
-                    <Image source={require('../../assets/images/image.png')} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
+                    <Image source={{uri:props.posting.image_url}} style={{ width: undefined, height: undefined, resizeMode: 'cover', flex: 1 }} />
                 </View>
             </View>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: "space-between" }}>

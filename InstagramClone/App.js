@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Home, Add, Search, Profile, Like } from './src/screens'
+import { Home, Add, Search, Profile, Like, Login } from './src/screens'
 
 
 const Stack = createStackNavigator();
@@ -12,6 +12,7 @@ export default function App() {
 	return (
 		<NavigationContainer>
 			<Stack.Navigator>
+				{/* <Stack.Screen options={{ headerShown: false }} name="Login" component={Login} /> */}
 				<Stack.Screen options={{ headerShown: false }} name="Home" component={Home} />
 				<Stack.Screen options={{ headerShown: false }} name="Add" component={Add} />
 				<Stack.Screen options={{ headerShown: false }} name="Search" component={Search} />
